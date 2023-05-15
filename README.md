@@ -29,7 +29,7 @@ input = torch.randn(64, 384, 32, 32).cuda()
 output = layer(input)
 print(output.shape)
 ```
-You can also try [test.py](https://github.com/ShengqiWang/lightnovel-download/blob/master/使用说明.md) to test the speed of depthwise conv with different kernel size and input size. Here is the testing result on Gefore RTX 4090:
+You can also try [test.py](https://github.com/ShqWW/dwconv2d/blob/master/test.py) to test the speed of depthwise conv with different kernel sizes and input sizes. Here is the testing result on Gefore RTX 4090:
 
     **************new dwconv2d****************
     kernel size 3 iter time 68.85363801848143 ms
