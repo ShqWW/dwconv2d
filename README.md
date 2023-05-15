@@ -1,6 +1,6 @@
 # Efficient Implementation of 2D Depthwise Convolution for Large Kernel Based on Pytorch and Nvidia CUDA
 
-This is an efficient cuda implementation of 2D depthwise convolution, it can be used in Pytorch deep learning framework.
+This is an efficient cuda implementation of 2D depthwise convolution for large kernel, it can be used in Pytorch deep learning framework.
 
 
 ## Feature
