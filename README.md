@@ -67,7 +67,7 @@ You can also try [test.py](https://github.com/ShqWW/dwconv2d/blob/master/test.py
     *******************************************
 
 ## Thanks
-This project is motivated by ["Megengin"](https://github.com/MegEngine/cutlass/tree/master/examples/19_large_depthwise_conv2d_torch_extension) and its paper "[RepLKNet](https://arxiv.org/abs/2203.06717)"。
+This project is motivated by ["Megengin"](https://github.com/MegEngine/MegEngine) and its paper "[RepLKNet](https://arxiv.org/abs/2203.06717)"。
 
 
 
