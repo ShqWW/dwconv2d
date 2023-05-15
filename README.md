@@ -10,6 +10,8 @@ This is an efficient cuda implementation of 2D depthwise convolution, it can be 
 
 * Support for kernel size range from 3 to 31, and the kernel width and height can be different.
 
+* Support for bias.
+
 * Faster training and testing speed with large kernel size than `nn.conv2d` in Pytorch.
 
 ## Install
