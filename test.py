@@ -8,8 +8,8 @@ cudnn.benchmark = True
 
 # this is the test code for the speed of the new conv2d
 
-size = 64  #input size
-batch = 64 #batch size
+size = 32  #input size
+batch = 32 #batch size
  
 def benchmark_my_conv(ksize, batch=64, dim=384, img_size=size, depth=24):
     m = nn.Sequential(
