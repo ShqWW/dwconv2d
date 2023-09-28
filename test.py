@@ -8,10 +8,10 @@ cudnn.benchmark = True
 
 # this is the test code for the speed of the new conv2d
 
-size = 32  #input size
-batch = 32 #batch size
+size = 64  #input size
+batch = 64 #batch size
  
-def benchmark_my_conv(ksize, batch=64, dim=384, img_size=size, depth=24):
+def benchmark_my_conv(ksize, batch=batch, dim=384, img_size=size, depth=24):
     m = nn.Sequential(
         *[DwConv2d(dim, kernel_size=(ksize, ksize), padding=(ksize//2, ksize//2), bias=False) for _ in range(depth)]
     ).cuda()
@@ -25,7 +25,7 @@ def benchmark_my_conv(ksize, batch=64, dim=384, img_size=size, depth=24):
         t = time.perf_counter() - t
     return t * 1000
 
-def benchmark_pytorch(ksize, batch=64, dim=384, img_size=size, depth=24):
+def benchmark_pytorch(ksize, batch=batch, dim=384, img_size=size, depth=24):
     m = nn.Sequential(
         *[nn.Conv2d(dim, dim, kernel_size=(ksize, ksize), padding=(ksize//2, ksize//2), groups=dim, bias=False) for _ in range(depth)]
     ).cuda()
